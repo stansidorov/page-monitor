@@ -24,16 +24,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # URL link of the page we want to monitor
-URL_LINK = "https://canada.mid.ru/ru_RU/novosti"
+URL_LINK = "<URL here>"
 
 # CSS class name that we are interested in
-CLASS_ELEMENT = "portlet"
+CLASS_ELEMENT = "<CSS class here>"
 
 # Topic to push notifications about a change
-CHANGE_STATUS_TOPIC = "arn:aws:sns:us-west-2:868131308206:RuEmbassyMonitor"
+CHANGE_STATUS_TOPIC = "<AWS change topic here>"
 
 # Topic to push notification about a script status
-HEALTH_STATUS_TOPIC = "arn:aws:sns:us-west-2:868131308206:ServerStatus"
+HEALTH_STATUS_TOPIC = "AWS health status topic here"
 
 # Message when the page content is changed
 MSG_CHANGE_DETECTED = f"The page has been changed. Go check: {URL_LINK}"
